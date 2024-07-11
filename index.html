@@ -3,56 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Universe!</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet"> 
+    <title>Hello World</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
-    <main>
-        <img src="./image/icon/ic-1.png" alt="Icon" class="icon">
-        <img src="./image/icon/ic-2.png" alt="Icon" class="icon">
-        <img src="./image/icon/ic-3.png" alt="Icon" class="icon">
-        <img src="./image/icon/ic-4.png" alt="Icon" class="icon">
-        <img src="./image/icon/ic-5.png" alt="Icon" class="icon">
-        <img src="./image/icon/ic-6.png" alt="Icon" class="icon">
-        <img src="./image/icon/ic-7.png" alt="Icon" class="icon">
-
-        <section id="profile" class="profile">
-            <img src="./image/profile@2x.png" alt="Profile Dwi Indah Pujilestari" class="img-profile">
-            <h3>Dwi Indah</h3>
-            <p>Front End Developer</p>
-        </section>
-
-        <section id="links" class="links">
-            <div class="links-button">
-                <div class="buttons">
-                    <img src="./image/icon/ic_link.svg" alt="">
-                    <a href="https://dwi-indah.site/" target="_blank" class="link">Portofolio</a>
-                </div>
-                <div class="buttons">
-                    <img src="./image/icon/ic_linkedin.svg" alt="">
-                    <a href="https://www.linkedin.com/in/dwi-indah-7ab44111b/" target="_blank" class="link">Linked</a>
-                </div>
-                <div class="buttons">
-                    <img src="./image/icon/ic_github.svg" alt="">
-                    <a href="https://github.com/dwi-indah" target="_blank" class="link">Github</a>
-                </div>
-            </div>
-            <div class="links-sosmed">
-                <div class="icon-sosmed">
-                    <a href="https://medium.com/@dwi.indah" target="_blank"><img src="./image/icon/ic_medium.svg" alt=""></a>
-                </div>
-                <div class="icon-sosmed">
-                    <a href="https://www.instagram.com/akasaanggana/" target="_blank"><img src="./image/icon/ic_instagram.svg" alt=""></a>
-                </div>
-                <div class="icon-sosmed">
-                    <a href="https://codepen.io/dwi-indah"><img src="./image/icon/ic_codepen.svg" target="_blank" alt=""></a>
-                </div>
+    <header>
+        <section style="background-image: url('asset/images/bg-mobile.png'); background-size: cover;" class="header">
+            <div class="headerWrap">
+                <p class="headerWrap-desc">Hello there, I'm</p>
+                <h1 class="headerWrap-title">Dwi Indah</h1>
+                <p class="headerWrap-desc">Software engineer specialized in frontend web development. Currently UI/UX Engineer at Kompas.com</p>
             </div>
         </section>
-
+    </header>
+    <nav class="nav">
+        <ul class="nav-list container">
+            <li class="nav-item"><a href="#biograph">Bio</a></li>
+            <li class="nav-item"><a href="#project">Project</a></li>
+            <li class="nav-item"><a href="#exploration">Exploration</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="bio" class="section">
+            <div class="bio">
+                <div class="bioImage">
+                    <img src="./asset/images/img-profile.png" alt="" loading="lazy">
+                </div>
+                <div class="bioDesc">
+                    <h2 class="bioDesc-title">Biograph</h2>
+                    <p>I enjoy helping to turn your designs into interactive websites. As a passionate frontend web developer, I specialize in crafting visually stunning and user-friendly websites, leveraging my skills in HTML, CSS, and JavaScript to bring innovative digital experiences to life.</p>
+                </div>
+                <div class="bioContact">
+                    <a href="https://github.com/dwi-indah" class="bioContact-link" target="_blank">
+                        <img src="./asset/images/logo-github.png" alt="" loading="lazy">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dwi-indah-7ab44111b" class="bioContact-link" target="_blank">
+                        <img src="./asset/images/logo-linkedin.png" alt="" loading="lazy">
+                    </a>
+                    <a href="mailto:dwindach@gmail.com" class="bioContact-link" target="_blank">
+                        <img src="./asset/images/logo-mail.png" alt="" loading="lazy">
+                    </a>
+                    <a href="https://www.instagram.com/codewithindah?igsh=MXJoNjg4bWpvMnE5dQ==" class="bioContact-link" target="_blank">
+                        <img src="./asset/images/logo-instagram.png" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="section">
+            <div class="section-title">Projects</div>
+            <div class="project">
+                <div class="projectItem">
+                    <div class="projectItem-name">
+                        theundangan.com
+                    </div>
+                    <div class="projectItem-img">
+                        <img src="./asset/images/img-project-1.png" alt="Project Image" loading="lazy">
+                    </div>
+                    <div class="projectItem-desc">
+                        <p>theUndangan.com is an online invitation service provider platform. in this project I designed, coded and set up the hosting and domain.</p>
+                        <a href="https://theundangan.com/" target="_blank" class="projectItem-link">
+                            <p class="projectItem-link-title">Visit Project</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <div class="projectItem-name">
+                        radufood.com
+                    </div>
+                    <div class="projectItem-img">
+                        <img src="./asset/images/img-project-2.png" alt="Project Image" loading="lazy">
+                    </div>
+                    <div class="projectItem-desc">
+                        <p>In this project I made a landing page for PT Rasakita Adhikari Utama. I translate from UI design to website. My focus is to make a friendly and responsive website.</p>
+                        <a href="https://radufood.com/" target="_blank" class="projectItem-link">
+                            <p class="projectItem-link-title">Visit Project</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <div class="projectItem-name">
+                        VIK - Merapah Trans-Sumatera 2022
+                    </div>
+                    <div class="projectItem-img">
+                        <img src="./asset/images/img-project-3.png" alt="Project Image" loading="lazy">
+                    </div>
+                    <div class="projectItem-desc">
+                        <p>This project belongs to Visual Interaktif Kompas. As UIUX Engineer in Kompas.com, I translate design to responsive & interactive website.</p>
+                        <a href="https://vik.kompas.com/merapah-trans-sumatera-2022/" target="_blank"  class="projectItem-link">
+                            <p class="projectItem-link-title">Visit Project</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="exploration" class="section">
+            <div class="section-title">Explore</div>
+            <div class="explore">
+                <div class="exploreItem">
+                    <a href="https://dwi-indah.github.io/scroll-snap/" class="exploreItem-link">
+                        <div class="exploreItem-img">
+                            <img src="./asset/images/img-explore-html.png" alt="Explore Image" loading="lazy">
+                        </div>
+                        <p>scroll-snap</p>
+                    </a>
+                </div>
+                <div class="exploreItem">
+                    <a href="https://github.com/dwi-indah/submission-dicoding-bookshelf" class="exploreItem-link">
+                        <div class="exploreItem-img">
+                            <img src="./asset/images/img-explore-js.png" alt="Explore Image" loading="lazy">
+                        </div>
+                        <p>bookshelf-app</p>
+                    </a>
+                </div>
+                <div class="exploreItem">
+                    <a href="https://dwi-indah.github.io/frontend-mentor-accordion/" class="exploreItem-link">
+                        <div class="exploreItem-img">
+                            <img src="./asset/images/img-explore-css.png" alt="Explore Image" loading="lazy">
+                        </div>
+                        <p>faq-accordion</p>
+                    </a>
+                </div>
+                <div class="exploreItem">
+                    <a href="https://dwi-indah.github.io/frontend-mentor-advice-generator/" class="exploreItem-link">
+                        <div class="exploreItem-img">
+                            <img src="./asset/images/img-explore-js.png" alt="Explore Image" loading="lazy">
+                        </div>
+                        <p>advice-generator</p>
+                    </a>
+                </div>
+                <div class="exploreItem">
+                    <a href="https://dwi-indah.github.io/frontend-mentor-huddle-landing-page/" class="exploreItem-link">
+                        <div class="exploreItem-img">
+                            <img src="./asset/images/img-explore-html.png" alt="Explore Image" loading="lazy">
+                        </div>
+                        <p>landing-page</p>
+                    </a>
+                </div>
+                <div class="exploreItem">
+                    <a href="https://dwi-indah.github.io/frontend-mentor-testimonal-grid-section/" class="exploreItem-link">
+                        <div class="exploreItem-img">
+                            <img src="./asset/images/img-explore-css.png" alt="Explore Image" loading="lazy">
+                        </div>
+                        <p>testionial-section</p>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer"><p>Made with Love from Indonesia</p></footer>
 
+    <script src="asset/js/script.js"></script>
 </body>
 </html>
